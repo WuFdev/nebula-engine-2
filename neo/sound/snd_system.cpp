@@ -161,9 +161,12 @@ void ListSounds_f( const idCmdArgs &args ) {
 		totalSounds++;
 	}
 	// carmack's code is fricked up thank you carmack for making my life harder
-	common->Printf( "%8d total sounds\n", totalSounds );
-	common->Printf( "%8d total samples loaded\n", totalSamples );
-	common->Printf( "%8d kB total system memory used\n", totalMemory >> 10 );
+	
+	
+	
+	common->Printf("There is ", "%8d total sounds\n", totalSounds );
+	common->Printf("There is ", "%8d total samples loaded\n", totalSamples );
+	common->Printf("There is ", "%8d kB total system memory used\n", totalMemory >> 10 );
 #if ID_OPENAL
 	common->Printf( "%8d kB total OpenAL audio memory used\n", ( alGetInteger( alGetEnumValue( (ALubyte *) "AL_EAX_RAM_SIZE" ) ) - alGetInteger( alGetEnumValue( (ALubyte *) "AL_EAX_RAM_FREE" ) ) ) >> 10 );
 #endif
