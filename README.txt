@@ -1,4 +1,4 @@
-Doom 3 GPL source release
+Doom 3 GPL source release (GPL IS OWNED BY ID SOFTWARE)
 =========================
 
 This file contains the following sections:
